@@ -8,11 +8,35 @@
     <language>en-us</language><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://example.org/post/test/</link>
+      <link>http://example.org/post/firstblog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/test/</guid>
-      <description>my first blog contents 한글도 써지나? H1급 글머리 은 첫번째 는 두번째 은 검정 점. this is a nomal page. </description>
+      <guid>http://example.org/post/firstblog/</guid>
+      <description>08.07 iaaS 를 이용한 openAI api 사용 kafka 세팅(로컬) Producer 구현 Azure VM에 kafka세팅 App service에 배포 Consumer 구현(python) 1.1 docker 설정파일 작성 1.2 docker compose 실행 1.3 kafka 기본 명령
+깨달은점 : 도커가 있다. kafka도 있다. 메세지 브로커 역할? . docker compose 를 이용하기 위해서는 docker-compose.yml 파일을 작성해야한다. docker compose를 이용해서 도커에 kkafka를 설치한다. kafka 내에 topic을 생성한다. topic이 있어야 두 서버 연결가능. -&amp;gt; 컨슈머와 프로듀서 생성하여 연결.
+notion에작성한것.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/secondblog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/secondblog/</guid>
+      <description>08.08 DevOps by 배준현강사님 깨달은점 : ..?
+notion에작성한것.
+- 데이터 기반으로 이야기할 것. - 60퍼는 api가져왔을때 제이슨정도만 보여도 된다, - 이번주 배울 것 → 자동배포 - 그린 필드 → 새로운 프로젝트 - 브라운필드 → 만든지 4년 이상. →차세대라는 이름으로 수정/변경할것. - SI(시스템인테그레이션) 시스템 유지보수 - SE서비스(시스템 유지보수) - SM(서비스 메니지먼트) 시스템 구동에 대해 유지보수 - SA(서비스 아키텍쳐) 설계자. - ⇒브라운필드. - 그린필드나 브라운필드나 DevOps 도입은 비슷하다.(오직 그린필드만이 적용하는게 아니다.) - 레코드 시스템/ 참여시스템 중 선택 - 돈을 받는 순간 마운드 올라간 투수.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/post/thirdblog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/thirdblog/</guid>
+      <description>08.09 DevOps by 배준현강사님 깨달은점 : ..?
+notion에작성한것.
+일단 늦음. 11시 시작=============테스트 코드 → ex/ 로그인이 안됐지만 로그인이 되어 토큰이 넘어왔다 가정하는경우.- mokito 메소드 알아볼것. → 이미 토큰 받았다고 생각하고 코딩 할 수 있음.- DB가 없어도 있는것처럼하여 코딩가능.=============- 자동화를 배우는중. pipelines → github와 연동.- 쿠버네티스 (k8s, Kubernetes, 큐브, kube)는 **컨테이너화된 애플리케이션을 배포, 관리, 확장할 때 수반되는 다수의 수동 프로세스를 자동화하는 오픈소스 컨테이너 오케스트레이션 플랫폼**입니다.</description>
     </item>
     
   </channel>

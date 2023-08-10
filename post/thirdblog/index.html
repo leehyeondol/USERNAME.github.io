@@ -4,7 +4,7 @@
 <html>
   <head>
     <title>
-	Posts :: My New Hugo Site
+	 :: My New Hugo Site
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,7 +13,7 @@
 
 
 
-<title>Posts :: My New Hugo Site</title>
+<title> :: My New Hugo Site</title>
 
 <link rel="shortcut icon" href='/images/favicon.png' type="image/x-icon" />
 
@@ -50,7 +50,7 @@
     
   </head>
 
-  <body data-url="/post/"
+  <body data-url="/post/thirdblog/"
 
   class="">
 
@@ -89,7 +89,9 @@
     </div>
     
 
-    <div>	
+    <div>
+
+		
 	
 			
 		
@@ -118,7 +120,9 @@
 	  
 	</script>
 	<script type="text/javascript" src="/js/search.js"></script>
-</div>	
+</div>
+
+		
 	
 			
 		
@@ -132,7 +136,7 @@
 
 <ul class="menu">
 
-    <li data-nav-id="http://example.org/post/" class="dd-item active
+    <li data-nav-id="http://example.org/post/" class="dd-item parent active
         item_level_$level
         ">
 
@@ -149,7 +153,9 @@
 
 
 
-</ul>	
+</ul>
+
+		
 	
 			
 		
@@ -162,8 +168,6 @@
       <section class="page ">
       
 	
-	 
-	    
     
     
     <nav id="ariane" aria-label="breadcrumb">
@@ -214,7 +218,7 @@
 		
 
 		
-			<h1>Posts<span>firstBlog</span></h1>
+			<h1>Posts<span>thirdBlog</span></h1>
         
 
 			
@@ -225,7 +229,7 @@
 				<nav class="subpages">
 	            		
 	        			
-	            	<li class="active">
+	            	<li >
 	            		<a title="$pagetitle" href="/post/firstblog/">firstBlog</a>
 	            	</li>
 	            		
@@ -235,7 +239,7 @@
 	            	</li>
 	            		
 	        			
-	            	<li >
+	            	<li class="active">
 	            		<a title="$pagetitle" href="/post/thirdblog/">thirdBlog</a>
 	            	</li>
 	        	</nav> 
@@ -254,7 +258,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#iaas-를-이용한-openai-api-사용">iaaS 를 이용한 openAI api 사용</a></li>
+        <li><a href="#devops-by-배준현강사님">DevOps by 배준현강사님</a></li>
       </ul>
     </li>
   </ul>
@@ -269,49 +273,53 @@
 
 
 	<div class="content">
-	    <h1 ref="0807" >08.07</h1><a class="anchor" id="0807"></a>
-<h3 ref="iaas-를-이용한-openai-api-사용" >iaaS 를 이용한 openAI api 사용</h3><a class="anchor" id="iaas-를-이용한-openai-api-사용"></a>
-<ol>
-<li>kafka 세팅(로컬)</li>
-<li>Producer 구현</li>
-<li>Azure VM에 kafka세팅</li>
-<li>App service에 배포</li>
-<li>Consumer 구현(python)</li>
-</ol>
-<p>1.1 docker 설정파일 작성
-1.2 docker compose 실행
-1.3 kafka 기본 명령</p>
+	    <h1 ref="0809" >08.09</h1><a class="anchor" id="0809"></a>
+<h3 ref="devops-by-배준현강사님" >DevOps by 배준현강사님</h3><a class="anchor" id="devops-by-배준현강사님"></a>
 <ul>
 <li>
-<p>깨달은점 :  도커가 있다. kafka도 있다. 메세지 브로커 역할? . docker compose 를 이용하기 위해서는 docker-compose.yml 파일을 작성해야한다. docker compose를 이용해서 도커에 kkafka를 설치한다. kafka 내에 topic을 생성한다. topic이 있어야 두 서버 연결가능. -&gt; 컨슈머와 프로듀서 생성하여 연결.</p>
+<p>깨달은점 :  ..?</p>
 </li>
 <li>
 <p>notion에작성한것.</p>
 </li>
 </ul>
-<pre tabindex="0"><code>deployment/kafka/docker-compose.yml 폴더와 파일을 생성한다.
+<pre tabindex="0"><code>일단 늦음. 11시 시작
 
-docker compose로 도커 실행 → 카프카라는 이미지(하나의 서버)생성
+=============
 
-docker compose ~~~ exec ~~~ 로 topic 생성
+테스트 코드 → ex/ 로그인이 안됐지만 로그인이 되어 토큰이 넘어왔다 가정하는경우.
 
-docker compose -f .yml경로 exec kafka bash로 배쉬 실행
+- mokito 메소드 알아볼것. → 이미 토큰 받았다고 생각하고 코딩 할 수 있음.
+- DB가 없어도 있는것처럼하여 코딩가능.
 
-배쉬에서 컨슈머 실행 → kafka-consle-consumer ~~~~
+=============
 
-배쉬+컨슈머(프로듀서) 셋트 → 이거 두개면 서로 연결된거.
+- 자동화를 배우는중. pipelines → github와 연동.
 
-프로듀서는 그냥 배쉬하나 열어서 새로 만들면 그게 프로듀서임.
+- 쿠버네티스 (k8s, Kubernetes, 큐브, kube)는 **컨테이너화된 애플리케이션을 배포, 관리, 확장할 때 수반되는 다수의 수동 프로세스를 자동화하는 오픈소스 컨테이너 오케스트레이션 플랫폼**입니다.
+- 리눅스 마스터 2급이상은 시험 보세요
 
-배쉬에서 그냥
+- 자동화 → 보통은 **릴리즈 브랜치에** 걸어둠 : 릴리즈브렌치 = 버그 수정 후 빌드해보는 브랜치
 
-docker compose -f .yml경로 exec kafka bash로 배쉬 실행
+- pipelines → pipelines → new pipelines → use the clasic editor → gihub → repository 선택 → 보통은 릴리즈 브랜치 선택 → task에서 이것저것 추가. → triggers에서 scheduled add해서 시간 변경 → continuous intergration에서  enable cintinuous intergration  클릭하여 브랜치 변경당 자동화되게 설정 → save
 
-배쉬에서 컨슈머 실행 → kafka-consle-consumer ~~~~
+**⇒ci/cd 중 ci를 한거래**
 
-이거 똑같이해주면 됨.
+- CI/CD (Continuous Integration/Continuous Delivery)는 **애플리케이션 개발 단계를 자동화하여 애플리케이션을 더욱 짧은 주기로 고객에게 제공하는 방법**입니다. CI/CD의 기본 개념은 지속적인 통합, 지속적인 서비스 제공, 지속적인 배포입니다.
 
-Kafka는 **서버 클러스터 내에서 데이터 스트림을 레코드로 유지하는 방식으로 작동하는 브로커 기반 솔루션**입니다. Kafka 서버는 여러 데이터 센터에 분산되어 있을 수 있으며 여러 서버 인스턴스에 걸쳐 레코드 스트림(메시지)을 토픽으로 저장하여 데이터 지속성을 제공할 수 있습니다.
+- 버튜얼머신 → 톰켓에 올려서 → war파일 실행 → 장애가났을때 어딘지 알 수 없음.
+- 쿠버네트스 → 장애가 났을때 알아서 죽이고 알아서 살려줘.
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3ed73b1b-00dc-4193-add7-ddaaf6e3d602/Untitled.png)
+    
+    - 버전 컨트롤 하는법
+- **git의 remote란 무엇인가?** git에서의 remote 는 **외부의 깃헙 저장소가 있는 url에 대한 alias(별칭)을 만들어 관리하기 위한 명령어**이다. 이 명령어는 단순히 GitHub만을 위한 것이 아니며, GitLab, Garrit 과 같은 외부 저장소를 다루기 위해서 사용한다.
+
+==============
+
+- 아이디와 비번을 타이핑없이 자동화 시키는법.
+- 공개키와 비공개키를 이용해야함.
+- github → setting → 카테고리 deploy keys → add new 에서 해볼것. 하는법은 오늘 안알려줌. 자동화 실습때 알려줄꺼래. 공개되어있는 블로그 있는데, 넘어간대. 금요일 진행.
 </code></pre>
 		</div>
 
@@ -325,8 +333,6 @@ Kafka는 **서버 클러스터 내에서 데이터 스트림을 레코드로 �
 		
 	</div>
 	
-	 
-	
 
       </section>
 
@@ -334,6 +340,8 @@ Kafka는 **서버 클러스터 내에서 데이터 스트림을 레코드로 �
       
       <section class="right-menu ">
       
+	
+
 		
 	
 			
@@ -344,11 +352,21 @@ Kafka는 **서버 클러스터 내에서 데이터 스트림을 레코드로 �
     <label><i class="fas fa-align-right"></i>&nbsp;&nbsp;What&#39;s on this page</label>
     <nav>
         <ul >
-            <li><a href="/post/">Posts</a></li>
+            <li><a href="/post/thirdblog/"></a></li>
         </ul>
     </nav>
-    
-</div>	
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#devops-by-배준현강사님">DevOps by 배준현강사님</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+		
 	
 			
 		
@@ -374,7 +392,9 @@ Kafka는 **서버 클러스터 내에서 데이터 스트림을 레코드로 �
     
     
     <footer>
-      	
+      
+
+		
 	
 			
 		
